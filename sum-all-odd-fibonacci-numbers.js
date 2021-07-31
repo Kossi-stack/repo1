@@ -15,5 +15,3 @@ module.exports = function sumFibs(num, total = [1, 1])  {
  return sumFibs(num, total);
 
 }
-
-sumFibs(4);
