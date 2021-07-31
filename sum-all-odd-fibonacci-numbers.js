@@ -1,14 +1,19 @@
-module.exports = function sumFibs(num) {
-  // write your code here
-  let m = 0
-  let n = 1
-  let count = 0
-  while (n <=num) {
-    [n, m] = [n+m, n]
-    if (n%2 !==0){
-      count+= n
-    }
+module.exports = function sumFibs(num, total = [1, 1])  {
+
+  const n = total[total.length - 1] + total[total.length - 2];
+
+  if(n > num){
+
+    return total;
+
   }
-  return count;
+
+  if(n %2 ==0){
+    total.push(n);
+  }
+
+ return sumFibs(num, total);
+
 }
+
 sumFibs(4);
