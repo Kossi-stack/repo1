@@ -1,6 +1,5 @@
-module.exports = function (num) {
+module.exports = function sumFibs(num) {
   // write your code here
- function sumFibs(num) {
   let m = 0
   let n = 1
   let count = 0
@@ -11,5 +10,4 @@ module.exports = function (num) {
     }
   }
   return count;
-}
 }
