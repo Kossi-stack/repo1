@@ -11,4 +11,4 @@ module.exports = function sumFibs(num) {
   }
   return count;
 }
-sumFibs(4)
+sumFibs(4);
